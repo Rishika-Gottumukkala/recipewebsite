@@ -9,3 +9,7 @@ Responsive Design: Enjoy a seamless experience on any device with our fully resp
 # Technologies Used:
 HTML/CSS: For the structure and styling of the website.
 JavaScript: To enhance user interactions, such as search functionality and dynamic content updates.
+
+# View
+
+![Uploading Screenshot (198).png…]()
