@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Viewed Videos in our Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #ff6f61;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .video-section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.8em;
+            color: #ff6f61;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 80%;
+            background: #000;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .video-description {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1em;
+            color: #666;
+        }
+
+        .back-to-main {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-to-main a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #ff6f61;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-to-main a:hover {
+            background-color: #d4523f;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .video-container {
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            .video-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Most Viewed Videos in our Website</h1>
+    </header>
+
+    <div class="container">
+        <div class="video-section">
+            <h2>Mutton Curry</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/92K5OVhwVLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p class="video-description">A delicious Mutton Curry recipe that will leave you wanting more.</p>
+        </div>
+
+        <div class="video-section">
+            <h2>Gongura Mutton</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/ARi2D2oQ3Dc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p class="video-description">Learn to cook Gongura Mutton, a flavorful dish with a tangy twist.</p>
+        </div>
+
+        <div class="video-section">
+            <h2>Natu Kodi Curry</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/ARi2D2oQ3Dc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p class="video-description">A traditional Natu Kodi Curry recipe that is rich and spicy.</p>
+        </div>
+
+        <div class="video-section">
+            <h2>Fish Fry</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Qrg_tJjdHqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p class="video-description">Crispy and tasty Fish Fry that is perfect for any meal.</p>
+        </div>
+
+        <div class="video-section">
+            <h2>Chicken Gongura</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/IRu1AmqxCpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p class="video-description">A unique Chicken Gongura recipe combining chicken with tangy gongura leaves.</p>
+        </div>
+
+        <div class="video-section">
+            <h2>Egg and Prawns Curry</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/IRu1AmqxCpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p class="video-description">A flavorful Egg and Prawns Curry that is sure to delight your taste buds.</p>
+        </div>
+
+        <div class="video-section">
+            <h2>Chitachiguru Mutton</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/fkC2NBF2UVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p class="video-description">A delectable Chitachiguru Mutton recipe, perfect for special occasions.</p>
+        </div>
+
+        <div class="video-section">
+            <h2>Special Recipe</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/lgFM4qFhDvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p class="video-description">An exclusive recipe to try and enjoy.</p>
+        </div>
+    </div>
+     <!-- Go back to main page button -->
+     <div class="back-to-main">
+        <a href="index.html">Go back to main page</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENSE OF TASTE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay" onclick="toggleMenu()"></div>
+    <div class="blur-bg">
+        <header>
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+                <ul class="nav-links">
+                    <li class="active"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="soups.html">Soups</a></li>
+                    <li><a href="starters.html">Starters</a></li>
+                    <li><a href="biriyani.html">Biriyani</a></li>
+                    <li><a href="friedrice.html">Friedrice</a></li>
+                    <li><a href="burger.html">Burger</a></li>
+                    <li><a href="pizza.html">Pizza</a></li>
+                    <li><a href="desserts.html">Desserts</a></li>
+                </ul>
+            </nav>
+            <div class="title">
+                <h2>HEAVENLY HOME MADE</h2>
+            </div>
+            <div class="button">
+                <a href="watchvideo.html" class="btn" onclick="myfunction()">WATCH VIDEOS</a>
+                <a href="basicskill.html" class="btn" onclick="myfunction1()">BASIC SKILLS</a>
+                <a href="learnmore.html" class="btn" onclick="myfunction2()">LEARN MORE</a>
+            </div>
+        </header>
+
+        <div class="ThanksGiving">
+            <section class="home" id="home">
+                <div class="content">
+                    <h1>Recipes Made with Love and Passion</h1>
+                    <p>Heavenly Home Made food brings you the best and soul-touched recipes to your Home.</p>
+                    <p>Our Recipes are Fun to watch and easy to make.</p>
+                    <p>We strive to bring you the authentic food with the real taste.</p>
+                    <h1><span class="highlight">We Post a New Recipe Daily.</span></h1>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function myfunction() {
+            window.location.href = "watchvideo.html";
+        }
+        function myfunction1() {
+            window.location.href = "basicskills.html";
+        }
+        function myfunction2() {
+            window.location.href = "learnmore.html";
+        }
+
+        function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  const blurBg = document.querySelector('.blur-bg');
+  const overlay = document.querySelector('.overlay');
+
+  navLinks.classList.toggle('active');
+  blurBg.classList.toggle('menu-open');
+  overlay.classList.toggle('active');
+
+  // Set overlay display to 'none' when menu is closed
+  if (!navLinks.classList.contains('active')) {
+    overlay.style.display = 'none';
+  }
+}
+</script>
+
+</body>
+</html>
